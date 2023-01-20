@@ -1,3 +1,7 @@
+
+import GlobalStyle from '#/styles/GlobalStyle';
+import theme from '#/styles/theme';
+import { ThemeProvider } from 'styled-components';
 import * as S from './styles';
 
 interface MainProps {
@@ -5,9 +9,10 @@ interface MainProps {
 }
 
 const Main = ({ children }: MainProps) => (
-  <S.Container>
+  <ThemeProvider theme={theme}>
     <S.Content>{children}</S.Content>
-  </S.Container>
+    <GlobalStyle />
+  </ThemeProvider>
 );
 
 export default Main;

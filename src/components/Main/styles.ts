@@ -1,3 +1,5 @@
+
+'use client';
 import styled, { css } from 'styled-components';
 
 export const Container = styled.div`
@@ -10,7 +12,9 @@ export const Container = styled.div`
 export const Content = styled.div`
   ${({ theme }) => css`
     width: 100%;
-    max-width: ${theme.grid.container};
+    max-width: {theme.grid.container};
+
+  background-color: #fff;
 
     display: flex;
     flex-direction: column;
