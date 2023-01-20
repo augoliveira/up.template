@@ -1,6 +1,4 @@
-'use client';
 import { createGlobalStyle } from 'styled-components';
-
 import variables from './variables';
 import TransitionStyles from './TransitionStyles';
 import PrismStyles from './PrismStyles';
@@ -228,9 +226,10 @@ const GlobalStyle = createGlobalStyle`
   }
 
 
+
   img[alt=""],
   img:not([alt]) {
-    filter: blur(5px);
+    filter: blur(0px);
   }
 
 
@@ -249,7 +248,7 @@ const GlobalStyle = createGlobalStyle`
     }
 
     &.inline-link {
-      {({ theme }) => theme.mixins.inlineLink};
+      ${({ theme }) => theme.mixins.inlineLink};
     }
   }
 
@@ -283,7 +282,7 @@ const GlobalStyle = createGlobalStyle`
     }
 
     & > a {
-      {({ theme }) => theme.mixins.inlineLink};
+      ${({ theme }) => theme.mixins.inlineLink};
     }
 
     & > code {
@@ -345,7 +344,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   .skip-to-content {
-    {({ theme }) => theme.mixins.button};
+    ${({ theme }) => theme.mixins.button};
     position: absolute;
     top: auto;
     left: -999px;
@@ -393,7 +392,7 @@ const GlobalStyle = createGlobalStyle`
     }
 
     a {
-      {({ theme }) => theme.mixins.inlineLink};
+      ${({ theme }) => theme.mixins.inlineLink};
       line-height: 1.5;
     }
   }
@@ -411,7 +410,7 @@ const GlobalStyle = createGlobalStyle`
     }
 
     a {
-      {({ theme }) => theme.mixins.inlineLink};
+      ${({ theme }) => theme.mixins.inlineLink};
       font-family: var(--font-mono);
       font-size: var(--fz-sm);
       font-weight: 600;
@@ -419,10 +418,6 @@ const GlobalStyle = createGlobalStyle`
       text-transform: uppercase;
       letter-spacing: 0.1em;
     }
-  }
-
-  .gatsby-image-outer-wrapper {
-    height: 100%;
   }
 
   .headline {
@@ -457,6 +452,11 @@ const GlobalStyle = createGlobalStyle`
 .gradient {
   background: linear-gradient(rgba(14, 62, 151, 0.5) 50%, black);
 }
+
+
+  .gatsby-image-outer-wrapper {
+    height: 100%;
+  }
 
   ${TransitionStyles};
 

@@ -1,4 +1,3 @@
-'use client';
 import { css } from 'styled-components';
 
 const button = css`
@@ -166,7 +165,7 @@ const mixins = {
     list-style: none;
     padding: 0;
     margin: 0;
-  `
+  `,
 };
 
 export default mixins;
