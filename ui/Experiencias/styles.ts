@@ -4,6 +4,8 @@ import styled from 'styled-components';
 export const Container = styled.section`
   > section {
     width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
     justify-content: center;
     margin-top: 7rem;
     display: flex;
@@ -100,10 +102,6 @@ export const ItemContainer = styled.div`
     filter: brightness(1.3);
     filter: invert(1) drop-shadow(0 0 0.3rem #ffffff70);
     transform: translateY(-20px);
-  }
-
-  &:nth-child(even) > div {
-    margin-top: 4rem;
   }
 
   @media (max-width: 1000px) {

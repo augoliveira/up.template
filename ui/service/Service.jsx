@@ -8,7 +8,7 @@ import { Fade, Flip } from 'react-awesome-reveal';
 
 const Service = () => {
   return (
-    <Content id="service">
+    <Content id="service" data-aos="fade-up">
       <Flip top>
         <h4>
           My <span className="green">services</span>
@@ -70,4 +70,5 @@ const Cards = styled.div`
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 1rem;
   margin-top: 4rem;
+
 `;

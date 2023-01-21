@@ -1,6 +1,5 @@
 'use strict';
 
-const globals = require('./src/globals.json');
 
 module.exports = {
   parser: require.resolve('@typescript-eslint/parser'),

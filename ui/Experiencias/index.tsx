@@ -7,7 +7,7 @@ function Experiencias() {
     <Container>
       <section>
         <ExperienciaItem
-          year="Estratégia"
+          year="Foco no batimento de metas"
           title="Serviços"
           description="Rebranding
           Pesquisas
@@ -31,16 +31,6 @@ function Experiencias() {
           Incentivo
           Eventos
           Live Marketing"
-        />
-        <ExperienciaItem
-          year="digital"
-          title="Soluções"
-          description="Soluções Digitais
-          Branding
-          Marketing Digital
-          Mídia de Performance
-          Websites
-          Portais e Plataformas"
         />
       </section>
     </Container>
