@@ -1,3 +1,4 @@
+import { VercelLogo } from "../ui/VercelLogo";
 
 export default function RootLayout({
   children,

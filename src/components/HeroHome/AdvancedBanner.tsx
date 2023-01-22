@@ -17,7 +17,6 @@ export const AdvancedBannerTop = () => {
   const background: BannerLayer = {
     children: (
       <Box>
-        <div style={{ position: 'relative', width: '1920px', height: '1200px' }}>
         <Image
           src={Bg}
           alt="Out story pic"
@@ -29,7 +28,6 @@ export const AdvancedBannerTop = () => {
           objectFit: 'cover',
           }}
           />
-        </div>
       </Box>
     ),
     translateY: [0, 50],

@@ -64,7 +64,6 @@ const GlobalStyle = createGlobalStyle`
     border: 3px solid var(--navy);
     border-radius: 10px;
   }
-
   body {
     margin: 0;
     width: 100%;
@@ -143,7 +142,7 @@ const GlobalStyle = createGlobalStyle`
 
   section {
     margin: 0 auto;
-    padding: 100px 0;
+    
     max-width: 1000px;
 
     @media (max-width: 768px) {
@@ -315,7 +314,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   blockquote {
-    border-left-color: var(--green);
+    border-left-color: var(--yellow);
     border-left-style: solid;
     border-left-width: 1px;
     margin-left: 0px;
@@ -427,6 +426,7 @@ const GlobalStyle = createGlobalStyle`
 }
 
 .inset {
+  width: 100%;
   position: absolute;
   inset: 0;
 }
@@ -439,7 +439,7 @@ const GlobalStyle = createGlobalStyle`
 }
 
 .full {
-  height: 62vh;
+  height: 70vh;
   z-index: auto;
 }
 
@@ -457,6 +457,14 @@ const GlobalStyle = createGlobalStyle`
   .gatsby-image-outer-wrapper {
     height: 100%;
   }
+
+  .green{
+  background: linear-gradient(160.44deg, #ffeb6b 1.37%, #fcb93d 58.45%);
+    background-clip: text;
+    font-family: montserrat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 
   ${TransitionStyles};
 

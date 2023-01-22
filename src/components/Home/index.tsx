@@ -3,16 +3,16 @@
 import React from 'react';
 import Typewriter from 'typewriter-effect';
 import { Container } from '#/styles/styles';
-import { Content, HomeText } from './styles';
+import { Content, HomeText, Title } from './styles';
 
 export function HomeHero() {
   return (
     <Container>
       <Content>
         <HomeText>
-          <h1>
-            Agência de<code> Marketing</code>
-          </h1>
+          <Title>
+            Agência de Marketing
+          </Title>
           <h2>
             <blockquote>AUMENTE SUAS VENDAS E FATURAMENTO COM </blockquote>
             <h4>

@@ -11,18 +11,34 @@ export const Section = styled.section`
 `;
 
 
-  export const Wrapper = styled.div`
+export const Wrapper = styled.div`
   margin: 20px;
-
-  background-color: #fff;
+  background: linear-gradient(160.44deg, #6d23b6 1.37%, #47126b 58.45%);
+  box-shadow: inset 10px 10px 20px #9783e3;
+  border-radius: 8px;
+  color: #fff;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 `;
 
 export const Container = styled.section`
   padding-top: 2rem;
-  display: inline-flex;
+  width: 80%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 3rem 0;
+  display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  @media (max-width: 970px) {
+    width: 90%;
+  }
+
 `;
 
 export const Title = styled.h2`

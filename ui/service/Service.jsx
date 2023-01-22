@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
-import { MdDesignServices } from 'react-icons/md';
-import { FiCodesandbox } from 'react-icons/fi';
-import { CgWebsite } from 'react-icons/cg';
+import { MdScreenSearchDesktop, MdDesignServices } from 'react-icons/md';
+import { MdOutlineTungsten, MdOutlineDriveFileRenameOutline, MdOutlineOfflineShare } from 'react-icons/md';
+import { GoRocket } from 'react-icons/go';
 import Card from './Card';
 import { Fade, Flip } from 'react-awesome-reveal';
 
@@ -11,37 +11,67 @@ const Service = () => {
     <Content id="service" data-aos="fade-up">
       <Flip top>
         <h4>
-          My <span className="green">services</span>
+          Principais  <span className="green">soluções</span>
         </h4>
       </Flip>
       <Fade left>
-        <h1>What I Do</h1>
+        <h1>CONHEÇA NOSSOS PILARES DE ATUAÇÃO</h1>
       </Fade>
       <Cards>
         <Fade left>
           <Card
             Icon={MdDesignServices}
-            title={'Ui/Ux Designer'}
+            title={'UX Design'}
             desc={
-              'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet iure rerum obcaecati et laborum earum!'
+              'responsivos(adaptados a smartphones e tablets), otimizados para rankear no google, painel administrativo.'
             }
+            
           />
         </Fade>
         <Fade bottom>
           <Card
-            Icon={FiCodesandbox}
-            title={'Graphic Designer'}
+            Icon={MdOutlineTungsten}
+            title={'Estratégia de Marketing'}
             desc={
-              'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet iure rerum obcaecati et laborum earum!'
+              'Marketing de atração com estratégias de SEO, Produção de de Conteúdo para blog, whitepapers, e-books, infográficos e Redes Sociais. Eveniet iure rerum obcaecati et laborum earum!'
             }
           />
         </Fade>
         <Fade left>
           <Card
-            Icon={CgWebsite}
-            title={'Web Designer'}
+            Icon={GoRocket}
+            title={'SEO'}
             desc={
-              'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet iure rerum obcaecati et laborum earum!'
+              'Otimização de palavras-chave, conteúdo para Blog e Sites, backlinks, semântica, sitemap e auditoria de SEO. Eveniet iure rerum obcaecati et laborum earum!'
+            }
+          />
+        </Fade>
+      </Cards>
+      <Cards>
+        <Fade left>
+          <Card
+            Icon={MdScreenSearchDesktop}
+            title={'Tráfego Pago'}
+            desc={
+              'publicidade online. Links patrocinados, displays, native ads e social ads – AdWords, Facebook, Instagram, Linkedin, entre outros.'
+            }
+          />
+        </Fade>
+        <Fade bottom>
+          <Card
+            Icon={MdOutlineDriveFileRenameOutline}
+            title={'Design & Concept'}
+            desc={
+              'Comunicação estratégica através de: Outdoor, Fachada, Vitrine, Folders, Cartão de visita, Papelaria, Sinalização, Logotipo.'
+            }
+          />
+        </Fade>
+        <Fade left>
+          <Card
+            Icon={MdOutlineOfflineShare}
+            title={'Mídias Sociais'}
+            desc={
+              'Produção de conteúdo multiplataforma: vídeo, gif, texto, infográfico, testes, gestão e SAC 2.0 para mídia sociais.'
             }
           />
         </Fade>
@@ -70,5 +100,9 @@ const Cards = styled.div`
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 1rem;
   margin-top: 4rem;
-
+&:hover > div {
+    filter: brightness(1.3);
+    filter: invert(1) drop-shadow(0 0 0.3rem #ffffff70);
+    transform: translateY(-20px);
+  }
 `;

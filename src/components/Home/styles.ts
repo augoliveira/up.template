@@ -2,48 +2,20 @@
 import styled from 'styled-components';
 
 export const Content = styled.div`
-  width: 100%;
-  max-width: 1120vw;
-  margin: 0 auto;
   display: flex;
-  flex-direction: column;
-  z-index: 1;
-
-  @media (min-width: 994px) {
-    grid-template-columns: 1fr 1fr;
-    justify-content: center;
-    align-items: center;
+  height: 100%;
+  width: 100%;
+  display: table;
+  justify-content: center;
+  align-items: center;
+  @media only screen and (max-width: 600px) {
+    height: 60%;
   }
-  @media (max-width: 1080px) {
-    padding: 200px 100px;
+  @media only screen and (min-width: 600px) {
+    height: 50%;
   }
-  @media (max-width: 768px) {
-    padding: 150px 50px;
-  }
-  @media (max-width: 480px) {
-    padding: 125px 25px;
-  }
-
-  @media (min-width: 375px) {
-    width: 100%;
-    height: 100%;
-    h1 {
-      font-size: 1rem;
-    }
-  }
-
-  &.fillHeight {
-    padding: 0 150px;
-
-    @media (max-width: 1080px) {
-      padding: 0 100px;
-    }
-    @media (max-width: 768px) {
-      padding: 0 50px;
-    }
-    @media (max-width: 480px) {
-      padding: 0 25px;
-    }
+  @media only screen and (min-width: 992px) {
+    height: 80%;
   }
 `;
 
@@ -80,6 +52,12 @@ export const ImgHome = styled.div`
 `;
 
 export const HomeText = styled.div`
+  height: 100%;
+  width: 100%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   h2 {
     font-family: Roboto, sans-serif;
     font-weight: normal;
@@ -87,9 +65,9 @@ export const HomeText = styled.div`
     z-index: 8;
     font-size: 40.4303px;
     line-height: 1.2;
-    text-align: left;
     letter-spacing: 0px;
     text-shadow: none;
+    margin-top: -2%;
   }
   h3 {
     color: var(--text-secondary);
@@ -103,29 +81,53 @@ export const HomeText = styled.div`
     @media (min-width: 375px) {
       font-size: 0.3rem;
 
-      h1 {
+      h3 {
         padding: 1rem;
         font-size: 0.3rem;
       }
     }
   }
   h4 {
+    font-size: 3rem;
+    font-weight: 90px;
+    margin-top: -5%;
     color: #3cec00;
+    @media only screen and (max-width: 600px) {
+      padding: 10px 25px;
+    }
+    //for Tablets and Medium Screens
+    @media only screen and (min-width: 600px) {
+      padding: 10px 30px;
+    }
+    //for laptops and desktops
+    @media only screen and (min-width: 992px) {
+      padding: 15px 30px;
+    }
   }
   h1 {
-    font-size: 90px;
+    width: 60%;
+    font-size: 95px;
     font-weight: 900;
-    line-height: 95px;
     color: var(--first-color);
-    background: linear-gradient(160.44deg, #8a6cfa 1.37%, #5432d1 58.45%);
+    background: linear-gradient(160.44deg, #ffeb6b 1.37%, #fcb93d 58.45%);
     background-clip: text;
+    font-family: montserrat;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    @media (max-width: 375px) {
-      font-size: 4.2rem;
+    text-align: center;
+    //for Mobiles
+    @media only screen and (max-width: 600px) {
+      width: 100%;
+      font-size: 30px;
     }
-    @media (min-width: 768px) {
-      font-size: 4rem;
+    //for Tablets and Medium Screens
+    @media only screen and (min-width: 600px) {
+      width: 85%;
+      font-size: 30px;
+    }
+    //for laptops and desktops
+    @media only screen and (min-width: 992px) {
+      width: 85%;
     }
   }
   code {
@@ -143,6 +145,9 @@ export const HomeText = styled.div`
     }
     @media (min-width: 768px) {
       font-size: 4rem;
+    }
+    @media (min-width: 480px) {
+      font-size: 3rem;
     }
   }
   span {
@@ -163,6 +168,9 @@ export const HomeText = styled.div`
     }
     @media (min-width: 768px) {
       font-size: 2rem;
+    }
+    @media (min-width: 480px) {
+      font-size: 1.5rem;
     }
     color: var(--second-color);
     font-weight: 600;
@@ -190,5 +198,48 @@ export const HomeText = styled.div`
         transform: rotate(360deg);
       }
     }
+  }
+`;
+export const Title = styled.div`
+  width: 60%;
+  font-size: 5rem;
+  font-weight: 900;
+  color: var(--first-color);
+  background: linear-gradient(160.44deg, #fffff1 1.37%, #dfe9f3 58.45%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  //for Mobiles
+  @media only screen and (max-width: 600px) {
+    width: 100%;
+  }
+  //for Tablets and Medium Screens
+  @media only screen and (min-width: 600px) {
+    width: 85%;
+  }
+  //for laptops and desktops
+  @media only screen and (min-width: 992px) {
+    width: 85%;
+  }
+`;
+
+export const Description = styled.p`
+  width: 70%;
+  font-size: 20px;
+  margin-bottom: 2%;
+  color: #fff;
+  //for Mobiles
+  @media only screen and (max-width: 600px) {
+    width: 80%;
+    text-align: center;
+  }
+  //for Tablets and Medium Screens
+  @media only screen and (min-width: 600px) {
+    width: 70%;
+  }
+  //for laptops and desktops
+  @media only screen and (min-width: 992px) {
+    width: 70%;
   }
 `;
