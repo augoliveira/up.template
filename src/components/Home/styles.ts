@@ -134,7 +134,8 @@ export const HomeText = styled.div`
     }
   }
   code {
-    font-size: 85px;
+    width: 60%;
+    font-size: 3.8rem;
     font-weight: 900;
     line-height: 95px;
     color: var(--first-color);
@@ -143,14 +144,16 @@ export const HomeText = styled.div`
     font-family: montserrat;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    @media (max-width: 375px) {
-      font-size: 4.6rem;
+    @media only screen and (max-width: 600px) {
+      width: 100%;
     }
-    @media (min-width: 768px) {
-      font-size: 4rem;
+    //for Tablets and Medium Screens
+    @media only screen and (min-width: 600px) {
+      width: 85%;
     }
-    @media (min-width: 480px) {
-      font-size: 3rem;
+    //for laptops and desktops
+    @media only screen and (min-width: 992px) {
+      width: 85%;
     }
   }
   span {
@@ -208,7 +211,7 @@ export const HomeText = styled.div`
 `;
 export const Title = styled.div`
   width: 60%;
-  font-size: 4rem;
+  font-size: 3.8rem;
   font-weight: 900;
   color: var(--first-color);
   background: linear-gradient(160.44deg, #fffff1 1.37%, #dfe9f3 58.45%);

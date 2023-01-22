@@ -1,4 +1,4 @@
-import React from 'react';
+import { React, useMemo } from 'react';
 import styled from 'styled-components';
 import { MdScreenSearchDesktop, MdDesignServices } from 'react-icons/md';
 import { MdOutlineTungsten, MdOutlineDriveFileRenameOutline, MdOutlineOfflineShare } from 'react-icons/md';
@@ -8,7 +8,7 @@ import { Fade, Flip } from 'react-awesome-reveal';
 
 const Service = () => {
   return (
-    <Content id="service" data-aos="fade-up">
+    <Content id="service">
       <Flip top>
         <h4>
           Principais  <span className="green">soluções</span>
@@ -25,7 +25,7 @@ const Service = () => {
             desc={
               'responsivos(adaptados a smartphones e tablets), otimizados para rankear no google, painel administrativo.'
             }
-            
+
           />
         </Fade>
         <Fade bottom>

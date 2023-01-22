@@ -11,7 +11,7 @@ export function HomeHero() {
       <Content>
         <HomeText>
           <Title>
-            Agência de Marketing
+            Agência de <code>Marketing</code>
           </Title>
           <h2>
             <blockquote>AUMENTE SUAS VENDAS E FATURAMENTO COM </blockquote>
