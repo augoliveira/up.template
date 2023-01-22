@@ -88,7 +88,7 @@ export const HomeText = styled.div`
     }
   }
   h4 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: 90px;
     margin-top: -5%;
     color: #3cec00;
@@ -102,6 +102,9 @@ export const HomeText = styled.div`
     //for laptops and desktops
     @media only screen and (min-width: 992px) {
       padding: 15px 30px;
+    }
+    @media only screen and (min-width: 430px) {
+      padding: 15px 20px;
     }
   }
   h1 {
@@ -131,7 +134,7 @@ export const HomeText = styled.div`
     }
   }
   code {
-    font-size: 90px;
+    font-size: 85px;
     font-weight: 900;
     line-height: 95px;
     color: var(--first-color);
@@ -172,6 +175,9 @@ export const HomeText = styled.div`
     @media (min-width: 480px) {
       font-size: 1.5rem;
     }
+    @media (min-width: 430px) {
+      font-size: 1.5rem;
+    }
     color: var(--second-color);
     font-weight: 600;
   }
@@ -202,7 +208,7 @@ export const HomeText = styled.div`
 `;
 export const Title = styled.div`
   width: 60%;
-  font-size: 5rem;
+  font-size: 4rem;
   font-weight: 900;
   color: var(--first-color);
   background: linear-gradient(160.44deg, #fffff1 1.37%, #dfe9f3 58.45%);

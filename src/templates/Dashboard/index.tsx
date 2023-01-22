@@ -13,6 +13,7 @@ import { Footer } from '#/components/Footer/footer';
 const Dashboard = () => {
   return (
     <Main>
+      
       {/* Nao precisa mais da tag <a/> como children */}
       <Link
         href={{

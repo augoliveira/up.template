@@ -1,7 +1,9 @@
+'use client';
 import { createGlobalStyle } from 'styled-components';
-import variables from './variables';
-import TransitionStyles from './TransitionStyles';
-import PrismStyles from './PrismStyles';
+
+import variables from '#/styles/variables';
+import TransitionStyles from '#/styles/TransitionStyles';
+import PrismStyles from '#/styles/PrismStyles';
 
 const GlobalStyle = createGlobalStyle`
   ${variables};
@@ -64,6 +66,7 @@ const GlobalStyle = createGlobalStyle`
     border: 3px solid var(--navy);
     border-radius: 10px;
   }
+
   body {
     margin: 0;
     width: 100%;
@@ -111,9 +114,9 @@ const GlobalStyle = createGlobalStyle`
   main {
     margin: 0 auto;
     width: 100%;
-    max-width: 1600px;
+    max-width: 100vw;
     min-height: 100vh;
-    padding: 200px 150px;
+
 
     @media (max-width: 1080px) {
       padding: 200px 100px;
@@ -142,8 +145,8 @@ const GlobalStyle = createGlobalStyle`
 
   section {
     margin: 0 auto;
-    
-    max-width: 1000px;
+    padding: 5rem 0;
+    max-width: 1200px;
 
     @media (max-width: 768px) {
       padding: 80px 0;
@@ -161,7 +164,7 @@ const GlobalStyle = createGlobalStyle`
   h5,
   h6 {
     margin: 0 0 10px 0;
-    font-weight: 600;
+    font-weight: 900;
     color: var(--lightest-slate);
     line-height: 1.1;
   }
@@ -225,7 +228,6 @@ const GlobalStyle = createGlobalStyle`
   }
 
 
-
   img[alt=""],
   img:not([alt]) {
     filter: blur(0px);
@@ -246,9 +248,6 @@ const GlobalStyle = createGlobalStyle`
       color: var(--green);
     }
 
-    &.inline-link {
-      ${({ theme }) => theme.mixins.inlineLink};
-    }
   }
 
   button {
@@ -280,11 +279,8 @@ const GlobalStyle = createGlobalStyle`
       margin: 0;
     }
 
-    & > a {
-      ${({ theme }) => theme.mixins.inlineLink};
-    }
 
-    & > code {
+    code {
       background-color: var(--light-navy);
       color: var(--white);
       font-size: var(--fz-sm);
@@ -314,7 +310,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   blockquote {
-    border-left-color: var(--yellow);
+    border-left-color: var(--green);
     border-left-style: solid;
     border-left-width: 1px;
     margin-left: 0px;
@@ -343,7 +339,6 @@ const GlobalStyle = createGlobalStyle`
   }
 
   .skip-to-content {
-    ${({ theme }) => theme.mixins.button};
     position: absolute;
     top: auto;
     left: -999px;
@@ -391,7 +386,6 @@ const GlobalStyle = createGlobalStyle`
     }
 
     a {
-      ${({ theme }) => theme.mixins.inlineLink};
       line-height: 1.5;
     }
   }
@@ -409,7 +403,6 @@ const GlobalStyle = createGlobalStyle`
     }
 
     a {
-      ${({ theme }) => theme.mixins.inlineLink};
       font-family: var(--font-mono);
       font-size: var(--fz-sm);
       font-weight: 600;
@@ -419,6 +412,17 @@ const GlobalStyle = createGlobalStyle`
     }
   }
 
+  .gatsby-image-outer-wrapper {
+    height: 100%;
+  }
+
+  ${TransitionStyles};
+
+  ${PrismStyles};
+
+
+
+
   .headline {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 100;
@@ -426,7 +430,6 @@ const GlobalStyle = createGlobalStyle`
 }
 
 .inset {
-  width: 100%;
   position: absolute;
   inset: 0;
 }
@@ -439,8 +442,8 @@ const GlobalStyle = createGlobalStyle`
 }
 
 .full {
-  height: 70vh;
-  z-index: auto;
+  height: 100vh;
+  z-index: -1;
 }
 
 .center {

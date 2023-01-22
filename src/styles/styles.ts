@@ -14,15 +14,19 @@ export const Section = styled.section`
 export const Wrapper = styled.div`
   margin: 20px;
   background: linear-gradient(160.44deg, #6d23b6 1.37%, #47126b 58.45%);
-  box-shadow: inset 10px 10px 20px #9783e3;
-  border-radius: 8px;
+  box-shadow: inset 10px 10px 100px #9783e3;
+  border-radius: 20px 20px 5px 5px;
   color: #fff;
-  color: #fff;
+  width: auto;
+  height: 100%;
+  padding: 1rem;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-top: -50px;
+  color: #fff;
 `;
 
 export const Container = styled.section`

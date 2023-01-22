@@ -16,19 +16,16 @@ const Box = styled.div`
 export const AdvancedBannerTop = () => {
   const background: BannerLayer = {
     children: (
-      <Box>
-        <Image
-          src={Bg}
-          alt="Out story pic"
-          placeholder="blur"
-          quality={100}
-          fill
-          sizes="100vw"
-          style={{
+      <Image
+        src={Bg}
+        fill
+        quality={100}
+        sizes="100vw"
+        style={{
           objectFit: 'cover',
-          }}
-          />
-      </Box>
+        }}
+        alt={''}
+      />
     ),
     translateY: [0, 50],
     opacity: [1, 0.3],
