@@ -9,14 +9,6 @@ import { Fade, Flip } from 'react-awesome-reveal';
 const Service = () => {
   return (
     <Content id="service">
-      <Flip top>
-        <h4>
-          Principais  <span className="green">soluções</span>
-        </h4>
-      </Flip>
-      <Fade left>
-        <h1>CONHEÇA NOSSOS PILARES DE ATUAÇÃO</h1>
-      </Fade>
       <Cards>
         <Fade left>
           <Card

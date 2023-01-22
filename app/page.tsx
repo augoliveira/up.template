@@ -4,9 +4,10 @@ import { Contact } from '#/components/Contact/contact';
 import { Footer } from '#/components/Footer/footer';
 import { Links } from '#/components/Links';
 import * as S from '#/styles/styles';
-import { ScrollTop } from '#/components/ScrollTop';
+import ScrollTop from '#/components/ScrollTop';
 import dynamic from 'next/dynamic';
 import { Header } from '#/components/Header/page';
+import MainContent from '#/components/MainContent';
 
 const DynamicDashboard = dynamic(() => import('templates/Dashboard'), {
   ssr: false,
@@ -24,13 +25,10 @@ export default function Home() {
     <div>
       <Header />
       <DynamicHeroHome />
-      <S.Wrapper>
-        <DynamicService />
-        <DynamicDashboard />
-      </S.Wrapper>
+      <MainContent />
+      <DynamicDashboard />
       <Contact />
       <Footer />
-      <ScrollTop />
       <Links />
     </div>
   );

@@ -4,8 +4,9 @@ import theme from '#/styles/theme';
 import { Toaster } from 'react-hot-toast';
 import NextNprogress from 'nextjs-progressbar';
 import { ThemeProvider } from 'styled-components';
-import { Footer } from '../Footer/footer';
+import Cursor from '#/components/Cursor';
 import * as S from './styles';
+import ScrollTop from '../ScrollTop';
 
 interface MainProps {
   children: React.ReactNode;
@@ -22,6 +23,8 @@ const Main = ({ children }: MainProps) => (
     <Toaster position="bottom-right" />
     <S.Content>{children}</S.Content>
     <GlobalStyle />
+    <Cursor />
+    <ScrollTop />
   </ThemeProvider>
 );
 

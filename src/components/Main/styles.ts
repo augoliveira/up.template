@@ -14,7 +14,7 @@ export const Content = styled.div`
     width: 100%;
     max-width: {theme.grid.container};
 
-  background-color: #fff;
+  
 
     display: flex;
     flex-direction: column;

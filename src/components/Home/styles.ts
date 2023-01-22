@@ -67,7 +67,6 @@ export const HomeText = styled.div`
     line-height: 1.2;
     letter-spacing: 0px;
     text-shadow: none;
-    margin-top: -2%;
   }
   h3 {
     color: var(--text-secondary);
@@ -90,7 +89,7 @@ export const HomeText = styled.div`
   h4 {
     font-size: 2.5rem;
     font-weight: 90px;
-    margin-top: -5%;
+    
     color: #3cec00;
     @media only screen and (max-width: 600px) {
       padding: 10px 25px;
