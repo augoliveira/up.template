@@ -15,13 +15,12 @@ export function HomeHero() {
           </Title>
           <h2>
             <blockquote>AUMENTE SUAS VENDAS E FATURAMENTO COM </blockquote>
-            <h4>
+          </h2>
+          <h4>
               <span>TRÁFEGO P</span>
               <span>AG</span>
               <span>O</span>
             </h4>
-          </h2>
-
           <h2 className="cta-5-title">
             <Typewriter
               options={{
