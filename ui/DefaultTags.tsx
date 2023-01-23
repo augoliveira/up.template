@@ -34,6 +34,7 @@ export function DefaultTags() {
         href="/favicon/safari-pinned-tab.svg"
         rel="mask-icon"
       />
+      
     </>
   );
 }
