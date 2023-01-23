@@ -17,7 +17,17 @@ export function Header() {
       <div className="mobile-content">
         <Link href={'/'}>
           <span>
-            <Image src={Logo} alt={''} />
+            <Image
+              src={Logo}
+              alt={''}
+              placeholder="blur"
+              width={186}
+              height={51}
+              style={{
+                maxWidth: '100%',
+                height: 'auto',
+              }}
+            />
           </span>
         </Link>
         <MobileIcon onClick={handleOpen}>

@@ -1,10 +1,7 @@
 'use client';
-import { useState } from 'react';
+import { Suspense } from 'react';
 import { Contact } from '#/components/Contact/contact';
-import { Footer } from '#/components/Footer/footer';
 import { Links } from '#/components/Links';
-import * as S from '#/styles/styles';
-import ScrollTop from '#/components/ScrollTop';
 import dynamic from 'next/dynamic';
 import { Header } from '#/components/Header/page';
 import MainContent from '#/components/MainContent';
@@ -12,24 +9,34 @@ import MainContent from '#/components/MainContent';
 const DynamicDashboard = dynamic(() => import('templates/Dashboard'), {
   ssr: false,
 });
-const DynamicService = dynamic(() => import('../ui/service/Service'), {
-  ssr: false,
-});
-const DynamicHeroHome = dynamic(() => import('#/components/HeroHome/parallax'), {
-  ssr: false,
-});
+const DynamicHeroHome = dynamic(
+  () => import('#/components/HeroHome/parallax'),
+  {
+    ssr: false,
+  },
+);
 
 export default function Home() {
-  const [showMore, setShowMore] = useState(false);
   return (
     <div>
-      <Header />
-      <DynamicHeroHome />
-      <MainContent />
-      <DynamicDashboard />
-      <Contact />
-      <Footer />
-      <Links />
+      <Suspense fallback={<div>Loadin Header...</div>}>
+        <Header />
+      </Suspense>
+      <Suspense fallback={<div>Loadin DynamicHeroHome...</div>}>
+        <DynamicHeroHome />
+      </Suspense>
+      <Suspense fallback={<div>Loadin MainContent...</div>}>
+        <MainContent />
+      </Suspense>
+      <Suspense fallback={<div>Loadin DynamicDashboard...</div>}>
+        <DynamicDashboard />
+      </Suspense>
+      <Suspense fallback={<div>Loadin Contact...</div>}>
+        <Contact />
+      </Suspense>
+      <Suspense fallback={<div>Loadin Links...</div>}>
+        <Links />
+      </Suspense>
     </div>
   );
 }

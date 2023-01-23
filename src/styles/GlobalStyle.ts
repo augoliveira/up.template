@@ -7,14 +7,7 @@ import PrismStyles from '#/styles/PrismStyles';
 
 const GlobalStyle = createGlobalStyle`
   ${variables};
-  /* Step 1: Common Properties
-  These styles are required to make icons render reliably */
-  .icon::before {
-    display: inline-block;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-  }
-@import "../styles/all.css";
+
   html {
     box-sizing: border-box;
     width: 100%;
@@ -571,7 +564,7 @@ body {
 .progress-wrap::after {
   position: absolute;
   font-family: "Font Awesome 6 Free";
-  content: "\f30c";
+  content: "\f062";
   text-align: center;
   line-height: 44px;
   font-size: 13px;
