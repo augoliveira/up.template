@@ -8,7 +8,7 @@ export const Wrapper = styled.main`
   color: #fff;
   width: auto;
   height: 100%;
-  padding: 5rem;
+  padding: 2rem;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -28,6 +28,11 @@ export const Logo = styled.div`
 
 export const Title = styled.h1`
   font-size: 2.5rem;
+  @media (max-width: 460px) {
+    width: 100%;
+    font-size: 2rem;
+    margin: 1rem 1rem;
+  }
 `;
 
 export const Description = styled.h2`
@@ -43,7 +48,7 @@ export const Description = styled.h2`
   display: inline-block;
   zoom: 1;
   vertical-align: top;
-  padding: 0 45px;
+  padding: 0 2rem;
   margin: 0 auto;
   font-size: 50px;
   font-weight: 900;
@@ -54,5 +59,11 @@ export const Description = styled.h2`
 
   @media (max-width: 375px) {
     font-size: 2.8rem;
+  }
+  @media (max-width: 460px) {
+    width: 100%;
+    padding: 1rem 2rem;
+    font-size: 2rem;
+    margin: 0 auto;
   }
 `;

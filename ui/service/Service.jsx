@@ -81,9 +81,8 @@ const Content = styled.div`
   width: 80%;
   max-width: 1280px;
   margin: 0 auto;
-  padding: 3rem 0;
   @media (max-width: 970px) {
-    width: 90%;
+    width: 100%;
   }
 `;
 
