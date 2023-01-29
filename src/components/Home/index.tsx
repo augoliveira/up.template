@@ -3,7 +3,7 @@
 import React from 'react';
 import Typewriter from 'typewriter-effect';
 import { Container } from '#/styles/styles';
-import { Content, HomeText, Title } from './styles';
+import { Content, HomeText, Title, Description } from './styles';
 
 export function HomeHero() {
   return (
@@ -11,16 +11,11 @@ export function HomeHero() {
       <Content>
         <HomeText>
           <Title>
-            Agência de <code>Marketing</code>
+            AGENCIA DE <code>MARKETING</code>
           </Title>
-          <h2>
-            <blockquote>AUMENTE SUAS VENDAS E FATURAMENTO COM </blockquote>
-          </h2>
-          <h4>
-              <span>TRÁFEGO P</span>
-              <span>AG</span>
-              <span>O</span>
-            </h4>
+          <Description>
+            AUMENTE SUAS VENDAS E FATURAMENTO COM
+          </Description>
           <h2 className="cta-5-title">
             <Typewriter
               options={{

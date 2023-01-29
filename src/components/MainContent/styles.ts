@@ -2,9 +2,6 @@
 import styled from 'styled-components';
 
 export const Wrapper = styled.main`
-  background: linear-gradient(160.44deg, #6d23b6 1.37%, #47126b 58.45%);
-  box-shadow: inset 10px 10px 100px #9783e3;
-  border-radius: 20px 20px 5px 5px;
   color: #fff;
   width: auto;
   height: 100%;

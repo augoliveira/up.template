@@ -63,10 +63,31 @@ export const HomeText = styled.div`
     font-weight: normal;
     font-style: normal;
     z-index: 8;
-    font-size: 40.4303px;
+    font-size: 2rem;
     line-height: 1.2;
     letter-spacing: 0px;
+    text-align: center;
     text-shadow: none;
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: var(--first-color);
+    background: linear-gradient(to left, #1f1670, #9307f1, #fab703, #00d9ff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    //for Mobiles
+    @media only screen and (max-width: 600px) {
+    width: 80%;
+    text-align: center;
+  }
+  //for Tablets and Medium Screens
+  @media only screen and (min-width: 600px) {
+    width: 70%;
+  }
+  //for laptops and desktops
+  @media only screen and (min-width: 992px) {
+    width: 70%;
+  }
   }
   h3 {
     color: var(--text-secondary);
@@ -89,7 +110,7 @@ export const HomeText = styled.div`
   h4 {
     font-size: 2.5rem;
     font-weight: 90px;
-    
+
     color: #3cec00;
     @media only screen and (max-width: 600px) {
       padding: 10px 25px;
@@ -134,7 +155,7 @@ export const HomeText = styled.div`
   }
   code {
     width: 60%;
-    font-size: 3.8rem;
+    font-size: 3rem;
     font-weight: 900;
     line-height: 95px;
     color: var(--first-color);
@@ -210,7 +231,7 @@ export const HomeText = styled.div`
 `;
 export const Title = styled.div`
   width: 60%;
-  font-size: 3.8rem;
+  font-size: 3rem;
   font-weight: 900;
   color: var(--first-color);
   background: linear-gradient(160.44deg, #fffff1 1.37%, #dfe9f3 58.45%);
@@ -237,6 +258,7 @@ export const Description = styled.p`
   font-size: 20px;
   margin-bottom: 2%;
   color: #fff;
+  text-align: center;
   //for Mobiles
   @media only screen and (max-width: 600px) {
     width: 80%;
@@ -250,4 +272,5 @@ export const Description = styled.p`
   @media only screen and (min-width: 992px) {
     width: 70%;
   }
+
 `;

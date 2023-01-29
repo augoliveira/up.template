@@ -1,6 +1,6 @@
 import { Main } from 'components/Main/';
 import dynamic from 'next/dynamic';
-
+import { HeroSobre } from '#/components/HeroSobre/index'
 import * as S from '#/styles/styles'
 import HeroHome from '#/components/HeroHome/parallax';
 import { Section } from '#/styles/styles';
@@ -13,7 +13,7 @@ import { Footer } from '#/components/Footer/footer';
 const Dashboard = () => {
   return (
     <Main>
-      
+<HeroSobre />
       {/* Nao precisa mais da tag <a/> como children */}
       <Link
         href={{
