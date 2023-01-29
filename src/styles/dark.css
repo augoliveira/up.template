@@ -2843,6 +2843,8 @@ body {
 
 .pages-header {
   height: 75vh;
+  width: 100%;
+  text-align: center;
 }
 .pages-header .cont h1 {
   font-size: 75px;

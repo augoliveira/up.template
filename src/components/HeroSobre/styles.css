@@ -580,9 +580,12 @@ section#sobre .conteudo article p span {
 	font-weight: 700;
 }
 
-section#sobre .conteudo #ctas { padding: 38px 0 0 120px; }
+section#sobre .conteudo #ctas {
+  padding: 38px 0 0 120px;
+}
 
 section#sobre .conteudo #ctas .box {
+
 	float: left;
 	font-size: 15px;
 	font-weight: 700;
@@ -591,6 +594,7 @@ section#sobre .conteudo #ctas .box {
 }
 
 section#sobre .conteudo #ctas .box a.ir {
+
 	color: #fff;
 	display: block;
 	font-size: 12px;

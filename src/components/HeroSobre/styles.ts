@@ -3,13 +3,15 @@
 import styled from 'styled-components';
 
 export const AboutContainer = styled.section`
+width: 100%;
+  max-width: 1280px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 
   .AboutImg {
-    width: 200px;
+    width: 100%;
     display: flex;
     justify-self: center;
     align-self: center;
