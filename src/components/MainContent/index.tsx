@@ -1,6 +1,6 @@
 'use client';
 import React from 'react';
-import Service from '#/../ui/service/Service';
+import Service from '#/ui/service/Service';
 import { Fade, Flip } from 'react-awesome-reveal';
 import * as S from './styles';
 
