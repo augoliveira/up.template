@@ -34,7 +34,7 @@ export const handleSearch = () => {
 
   document
     .querySelector(".navbar .search .search-form .close")
-    .addEventListener("click", function () {
+    addEventListener("click", function () {
       searchForm.style.display = "none";
       fadeOut(searchForm, 200);
     });

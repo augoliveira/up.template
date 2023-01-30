@@ -1,44 +1,35 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
+  reactStrictMode: true, // Recommended for the `pages` directory, default in `app`.
   swcMinify: true,
-  transpilePackages: ['@acme/ui', 'lodash-es'],
-  images: {
-    remotePatterns: [
-      {
-        protocol: 'http',
-        hostname: '127.0.0.1',
-        port: '3001',
-        pathname: '/uploads/**',
-      },
-    ],
-  },
   experimental: {
-    forceSwcTransforms: true,
+    // Required:
     appDir: true,
   },
+  transpilePackages: ['@acme/ui', 'lodash-es'],
 };
-const withPWA = require('next-pwa');
-const isProd = process.env.NODE_ENV === 'production';
-
-module.exports = withPWA({
-  swcMinify: true,
-  skipTrailingSlashRedirect: true,
-  experimental: {
-    // urlImports: ['https://cdn.skypack.dev']
-  },
-  images: {
-    formats: ['image/avif', 'image/webp']
-  },
-  pwa: {
-    dest: 'public',
-    disable: !isProd
-  }
-});
 module.exports = {
-  'fontawesome-svg-core': {
-    license: 'free',
+  trailingSlash: false,
+  async headers() {
+    return [
+      {
+        // matching all API routes
+        source: '/:path*',
+        headers: [
+          { key: 'Access-Control-Allow-Credentials', value: 'true' },
+          { key: 'Access-Control-Allow-Origin', value: '*' },
+          { key: 'Access-Control-Allow-Methods', value: 'GET,OPTIONS,PATCH,DELETE,POST,PUT' },
+          { key: 'Access-Control-Allow-Headers', value: 'X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version, Authorization' },
+        ],
+      },
+    ];
   },
+  async redirects() {
+    return [];
+  }
 };
+module.exports = {
+  compress: false,
+}
 module.exports = nextConfig;

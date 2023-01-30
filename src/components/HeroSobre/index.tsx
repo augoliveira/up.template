@@ -7,6 +7,7 @@ import { Container, Title } from '../../styles/styles'
 import { ButtonPrimary } from '../../styles/styles'
 import { AboutContainer } from './styles'
 import { HiArrowRight } from 'react-icons/hi';
+import Link from 'next/link';
 
 export function HeroSobre() {
   return (
@@ -58,13 +59,13 @@ export function HeroSobre() {
               VOCÊ QUER BAIXAR
               <br />A APRESENTAÇÃO <br />COMPLETA
 
-              <a
+              <Link
                 className="ir soft-hover"
-                href="arquivos/apresentacao.pdf"
+                href="#"
                 target="_blank"
               >
                 Clique Aqui <HiArrowRight className="block w-4 bg-yellow-400"/>
-              </a>
+              </Link>
             </div>
 
             <span id="ou">OU</span>
@@ -73,19 +74,14 @@ export function HeroSobre() {
               DESEJA UM PROJETO
               <br />INCRÍVEL PARA <br />SEU NEGÓCIO?
 
-              <a className="ir soft-hover" href="#contato">
+              <Link className="ir soft-hover" href="#contato">
                 Vamos Conversar
                 <HiArrowRight className="block w-4 bg-yellow-400"/>
-              </a>
+              </Link>
             </div>
           </div>
         </article>
           </div>
-          <a href="/pdf/Evander-Curriculo.pdf" download>
-            <ButtonPrimary>
-              <b>Download CV</b> <DownloadSimple weight="bold" />
-            </ButtonPrimary>
-          </a>
         </div>
       </AboutContainer>
     </Container>

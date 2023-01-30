@@ -3,7 +3,10 @@ import { Suspense } from 'react';
 import { Contact } from '#/components/Contact/contact';
 import { Links } from '#/components/Links';
 import dynamic from 'next/dynamic';
+import Navbar from '#/components/Navbar';
+import React from 'react';
 import { Header } from '#/components/Header/page';
+
 
 const DynamicDashboard = dynamic(() => import('templates/Dashboard'), {
   ssr: false,
@@ -19,7 +22,7 @@ export default function Home() {
   return (
     <>
       <Suspense fallback={<div>Loadin Header...</div>}>
-        <Header />
+      <Header />
       </Suspense>
       <Suspense fallback={<div>Loadin DynamicHeroHome...</div>}>
         <Demos />

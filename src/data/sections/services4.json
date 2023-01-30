@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "title": "Identidade da marca",
+    "icon": "pe-7s-gleam",
+    "content": "Reunimos as pessoas certas para desafiar."
+  },
+  {
+    "id": 2,
+    "title": "Interface Web.",
+    "icon": "pe-7s-phone",
+    "content": "Criamos o design de website, hotsite, loja online, aplicativo, sistema..."
+  },
+  {
+    "id": 3,
+    "title": "Design Gráfico.",
+    "icon": "pe-7s-magic-wand",
+    "content": "Folder, flyer, cartão de visita, pasta, papel timbrado, outdoor, painel."
+  }
+]

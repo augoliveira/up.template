@@ -1,8 +1,9 @@
 
 import '#/styles/globals.css';
 import '#/styles/dark.css'
-import { VercelLogo } from '../ui/VercelLogo';
+
 import Head from './head';
+import { VercelLogo } from '#/ui/VercelLogo';
 export default function RootLayout({
   children,
 }: {
@@ -12,7 +13,7 @@ export default function RootLayout({
   return (
     <html lang="PT-BR" className="[color-scheme:dark]">
       <Head />
-      <body >
+      <body>
         <div className="rounded-lg p-3.5 lg:p-0">{children}</div>
         <div className="mx-auto max-w-full space-y-8 px-2 pt-20 lg:py-8 lg:px-64">
           <div className="rounded-lg bg-vc-border-gradient p-px shadow-lg shadow-black/20">

@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 'use client';
 import { Suspense } from 'react';
-import { ExternalLink } from '/ui/ExternalLink.tsx';
+import { ExternalLink } from '#/ui/ExternalLink.tsx';
 import addParlx from '#/common/addParlx'
 import initIsotope from '#/common/initIsotope'
 import { Contact } from '#/components/Contact/contact';

@@ -1,9 +1,6 @@
 'use client';
 
-import { DefaultTags } from "#/../ui/DefaultTags";
-
-
-
+import { DefaultTags } from "#/ui/DefaultTags";
 
 export default function Head() {
   return (

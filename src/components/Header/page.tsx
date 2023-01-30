@@ -15,7 +15,7 @@ export function Header() {
   return (
     <HeaderContainer style={{ position: 'fixed' }}>
       <div className="mobile-content">
-        <Link href={'/'}>
+        <Link href="/" aria-label="Read more about Seminole tax hike">
           <span>
             <Image
               src={Logo}

@@ -37,6 +37,10 @@ export const ContactContent = styled.div`
       font-size: 1.3rem;
       margin-bottom: 8px;
     }
+    h2 {
+      font-size: 1.3rem;
+      margin-bottom: 8px;
+    }
 
     span {
       color: var(--text-secondary);

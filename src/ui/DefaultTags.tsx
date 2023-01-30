@@ -1,4 +1,3 @@
-import Script from "next/script"
 
 // Default <head> tags we want shared across the app
 const APP_NAME = 'Agência full service'

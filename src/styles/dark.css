@@ -1,60 +1,3 @@
-/*-----------------------------------------------------------------------------------
-
-    Theme Name: Avo
-    Theme URI: http://
-    Description: Creative Agency & Portfolio
-    Author: ThemesCamp
-    Author URI: http://themeforest.net/user/ThemesCamp
-    Version: 1.0
-
------------------------------------------------------------------------------------*/
-/* ----------------------------------------------------------------
-
-== Table Of Content
-
-    |--- BASE
-
-        |- typography
-        |- helper classes
-
-    |--- SHORTCODES
-
-        |- extra
-        |- overlay
-        |- section-heading
-        |- buttons
-        |- navbar
-        |- sliders
-        |- intro
-        |- feature-box
-        |- clients
-        |- counter
-        |- portfolio
-        |- process
-        |- progress-bar
-        |- tabs
-        |- team
-        |- testimonials
-        |- blog
-        |- contact-form
-        |- footers
-
-    |--- BASE
-
-        |- responsive
-
-
-
----------------------------------------------------------------- */
-/* ====================== [ Start Typography  ] ====================== */
-
-
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600;700;800;900&family=Comfortaa:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Barlow:wght@100;200;300;400;500;600;700;800;900&family=Comfortaa:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 * {
   margin: 0;
@@ -385,6 +328,8 @@ span:hover {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  justify-content: center;
+  font-family: Montserrat, sans-serif;
 }
 
 .primery-shadow {
@@ -5721,6 +5666,10 @@ text-align: center;
   .md-mb10 {
     margin-bottom: 10px;
   }
+  .works-header .capt .bactxt {
+    font-size: 20rem;
+
+  }
   .md-mb20 {
     margin-bottom: 20px;
   }
@@ -5980,6 +5929,10 @@ text-align: center;
   .sm-mb10 {
     margin-bottom: 10px;
   }
+  .works-header .capt .bactxt {
+    font-size: 20rem;
+
+  }
   .sm-mb20 {
     margin-bottom: 20px;
   }
@@ -6196,6 +6149,10 @@ text-align: center;
 @media screen and (max-width: 480px) {
   .hamenu .cont-info {
     display: none;
+  }
+  .works-header .capt .bactxt {
+    font-size: 20rem;
+
   }
   .hamenu .menu-links .main-menu > li {
     font-size: 20px;

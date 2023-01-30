@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import Image from "next/image";
 import BgImg from '/public/img/slid/bg-05-free-img.jpg'
 
@@ -28,11 +29,11 @@ const AboutHeader = () => {
             <div className="cont text-center">
               <h1>Sobre | Up.expert</h1>
               <div className="path">
-                <a href="#0">Home</a>
+                <Link href="#0">Home</Link>
                 <span>/</span>
-                <a href="#0" className="active">
+                <Link href="#0" className="active">
                   Agência
-                </a>
+                </Link>
               </div>
             </div>
           </div>

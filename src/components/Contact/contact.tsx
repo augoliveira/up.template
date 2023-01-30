@@ -26,9 +26,9 @@ export function Contact() {
 
         <ContactContent>
           <div className="contact-content">
-            <h4>
+            <h2>
               <WhatsappLogo size={22} color="#00fffb" /> WhatsApp{' '}
-            </h4>
+            </h2>
             <Link
               href="https://api.whatsapp.com/send?phone=5561986692775"
               target="_blank"
@@ -38,19 +38,19 @@ export function Contact() {
           </div>
 
           <div className="contact-content">
-            <h4>
+            <h2>
               {' '}
               <TelegramLogo size={22} color="#00fffb" /> Email{' '}
-            </h4>
+            </h2>
             <Link href="mailto:contato@upexpert.com.br" target="_blank">
               <span>contato@upexpert.com.br</span>
             </Link>
           </div>
 
           <div className="contact-content">
-            <h4>
+            <h2>
               <MapPin size={22} color="#00fffb" /> Localização
-            </h4>
+            </h2>
             <span>QUADRA 6, SALA 501 - Asa Sul, Brasília - DF</span>
           </div>
         </ContactContent>
