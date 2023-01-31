@@ -14,7 +14,7 @@ import Demos from '#/components/Demos';
 const Dashboard = () => {
   return (
     <Main>
-        
+        <Demos />
         <Contact />
 
       {/* Nao precisa mais da tag <a/> como children */}

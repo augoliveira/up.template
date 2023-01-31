@@ -147,8 +147,7 @@ const Demos = () => {
         </div>
       </header>
       <div className="main-content" ref={MainContent}>
-        <MainAbout />
-        <HomeService />
+        <h1>Page</h1>
       </div>
     </>
   );
