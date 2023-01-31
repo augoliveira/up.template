@@ -48,8 +48,7 @@ function BGImage() {
         <Image
           src={bg1}
           width={width}
-          height={height}
-        />
+          height={height} alt={""}        />
       </Box>
     );
   }
