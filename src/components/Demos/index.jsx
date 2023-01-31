@@ -6,7 +6,7 @@ import addParlx from '#/common/addParlx'
 import initIsotope from '#/common/initIsotope'
 import { HeroSobre } from '#/components/HeroSobre';
 import MainAbout from '#/components/MainAbout';
-import Service from '#/ui/service/Service';
+import HomeService from '#/components/HomeService';
 import { Links } from '#/components/Links';
 import dynamic from 'next/dynamic';
 import Image from 'next/image'
@@ -82,7 +82,7 @@ const Demos = () => {
             objectFit: 'cover',
           }}
         />
-        
+
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-lg-9 col-md-11 static">
@@ -149,6 +149,7 @@ const Demos = () => {
       <div className="main-content" ref={MainContent}>
         <HeroSobre />
         <MainAbout />
+        <HomeService />
       </div>
     </>
   );
