@@ -14,7 +14,7 @@ import Link from 'next/link'
 import React, { useEffect } from 'react'
 import styled from 'styled-components'
 import Typewriter from 'typewriter-effect'
-import Bg from '../../../public/bg-slide2.jpg'
+import Bg from '/public/bg-slide2.jpg'
 
 const DynamicDashboard = dynamic(() => import('templates/Dashboard'), {
   ssr: false,
@@ -76,11 +76,11 @@ const Demos = () => {
           fill
           placeholder="blur"
           blurDataURL="data:image/png;base64,[IMAGE_CODE_FROM_PNG_PIXEL]"
-        quality={100}
-        sizes="100vw"
-        style={{
-          objectFit: 'cover',
-        }}
+          quality={100}
+          sizes="100vw"
+          style={{
+            objectFit: 'cover',
+          }}
         />
         </Wrapper>
         <div className="container">
