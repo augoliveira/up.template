@@ -69,7 +69,7 @@ export const Title = styled.h2`
     top: 3px;
     left: 50%;
     right: 50%;
-    color: var(--second-color);
+    color: var(--lightest-slate);
     opacity: 0.2;
     font-weight: 800;
     font-size: 2.6rem;

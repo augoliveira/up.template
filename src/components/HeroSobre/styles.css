@@ -544,7 +544,8 @@ section#cases .conteudo-fluid button#ver-mais-home:hover {
 section#sobre {
 	background: url(/public/img/face1.jpg) no-repeat center;
   background-size: auto;
-	height: 115vh;
+	height: 98vh;
+  font-family: 'Montserrat', sans-serif;
 }
 
 section#sobre .conteudo article {
@@ -555,10 +556,17 @@ section#sobre .conteudo article {
 
 section#sobre .conteudo article h2 {
 	color: #ffcc00;
-	font-size: 15px;
+	font-size: 2rem;
 	font-weight: 800;
 	letter-spacing: 5px;
 	margin-bottom: 25px;
+  @media (max-width: 970px) {
+    width: 100%;
+  }
+  @media (max-width: 480px) {
+    width: 100%;
+    margin-top: -5rem;
+  }
 }
 
 section#sobre .conteudo article h1 {
@@ -581,11 +589,11 @@ section#sobre .conteudo article p span {
 }
 
 section#sobre .conteudo #ctas {
-  padding: 38px 0 0 120px;
+  padding: 6rem 0 0 8rem;
 }
 
 section#sobre .conteudo #ctas .box {
-
+margin-top: -5rem;
 	float: left;
 	font-size: 15px;
 	font-weight: 700;

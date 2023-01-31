@@ -4,6 +4,7 @@ import '#/styles/dark.css'
 
 import Head from './head';
 import { VercelLogo } from '#/ui/VercelLogo';
+import { Header } from '#/components/Header/page';
 export default function RootLayout({
   children,
 }: {
@@ -14,7 +15,10 @@ export default function RootLayout({
     <html lang="PT-BR" className="[color-scheme:dark]">
       <Head />
       <body>
-        <div className="rounded-lg p-3.5 lg:p-0">{children}</div>
+        <div className="rounded-lg p-3.5 lg:p-0">
+          <Header />
+          {children}
+          </div>
         <div className="mx-auto max-w-full space-y-8 px-2 pt-20 lg:py-8 lg:px-64">
           <div className="rounded-lg bg-vc-border-gradient p-px shadow-lg shadow-black/20">
             <div className="rounded-lg bg-vc-border-gradient p-px shadow-lg shadow-black/20">
@@ -32,7 +36,6 @@ function Byline() {
   return (
     <div className="flex items-center justify-between gap-x-8 p-3.5 lg:px-5 lg:py-3">
       <div className="flex items-center gap-x-1.5">
-        <div className="text-sm text-gray-400">Desenvolvido por</div>
         <a href="https://upexpert.com.br" title="up.expert">
           <div className="w-16 text-gray-100 hover:text-gray-50">
             <VercelLogo />

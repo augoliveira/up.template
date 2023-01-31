@@ -6,6 +6,8 @@ import dynamic from 'next/dynamic';
 import Navbar from '#/components/Navbar';
 import React from 'react';
 import { Header } from '#/components/Header/page';
+import Dashboard from 'templates/Dashboard';
+import { Section } from '#/styles/styles';
 
 
 const DynamicDashboard = dynamic(() => import('templates/Dashboard'), {
@@ -21,12 +23,7 @@ const Demos = dynamic(
 export default function Home() {
   return (
     <>
-      <Suspense fallback={<div>Loadin Header...</div>}>
-      <Header />
-      </Suspense>
-      <Suspense fallback={<div>Loadin DynamicHeroHome...</div>}>
-        <Demos />
-      </Suspense>
+          <Dashboard />
     </>
   );
 }

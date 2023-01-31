@@ -8,12 +8,15 @@ import Link from 'next/link';
 import { About } from '#/components/About/page';
 import { Contact } from '#/components/Contact/contact';
 import { Footer } from '#/components/Footer/footer';
+import Demos from '#/components/Demos';
 
 
 const Dashboard = () => {
   return (
     <Main>
-<HeroSobre />
+        <Demos />
+        <Contact />
+
       {/* Nao precisa mais da tag <a/> como children */}
       <Link
         href={{
@@ -21,7 +24,7 @@ const Dashboard = () => {
           query: { name: 'test' },
         }}
       >
-        About
+        Aumentar as vendas
       </Link>
     </Main>
   );

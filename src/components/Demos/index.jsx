@@ -4,7 +4,9 @@ import { Suspense } from 'react';
 import { ExternalLink } from '#/ui/ExternalLink.tsx';
 import addParlx from '#/common/addParlx'
 import initIsotope from '#/common/initIsotope'
-import { Contact } from '#/components/Contact/contact';
+import { HeroSobre } from '#/components/HeroSobre';
+import MainAbout from '#/components/MainAbout';
+import Service from '#/ui/service/Service';
 import { Links } from '#/components/Links';
 import dynamic from 'next/dynamic';
 import Image from 'next/image'
@@ -20,7 +22,7 @@ const DynamicDashboard = dynamic(() => import('templates/Dashboard'), {
 
 
 const Wrapper = styled.div`
-  z-index: 1;
+  z-index: -1;
   width: 100%;
   height: 100%;
   position: fixed;
@@ -67,6 +69,7 @@ const Demos = () => {
         className="works-header fixed-slider hfixd valign bg-img1"
         data-overlay-dark="4"
       >
+      <Wrapper>
         <Image
           src={Bg}
           alt="Picture of the author"
@@ -79,6 +82,7 @@ const Demos = () => {
           objectFit: 'cover',
         }}
         />
+        </Wrapper>
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-lg-9 col-md-11 static">
@@ -143,15 +147,8 @@ const Demos = () => {
         </div>
       </header>
       <div className="main-content" ref={MainContent}>
-        <Suspense fallback={<div>Loadin DynamicDashboard...</div>}>
-          <DynamicDashboard />
-        </Suspense>
-        <Suspense fallback={<div>Loadin Contact...</div>}>
-          <Contact />
-        </Suspense>
-        <Suspense fallback={<div>Loadin Links...</div>}>
-          <Links />
-        </Suspense>
+        <HeroSobre />
+        <MainAbout />
       </div>
     </>
   );
