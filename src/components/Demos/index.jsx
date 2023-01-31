@@ -69,7 +69,7 @@ const Demos = () => {
         className="works-header fixed-slider hfixd valign bg-img1"
         data-overlay-dark="4"
       >
-      <Wrapper>
+
         <Image
           src={Bg}
           alt="Picture of the author"
@@ -82,7 +82,7 @@ const Demos = () => {
             objectFit: 'cover',
           }}
         />
-        </Wrapper>
+        
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-lg-9 col-md-11 static">

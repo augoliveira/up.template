@@ -42,10 +42,18 @@ export function HeroSobre() {
               <br />A APRESENTAÇÃO <br />COMPLETA
               <Link
                 className="ir soft-hover"
-                href="arquivos/apresentacao.pdf"
+                href="#"
                 target="_blank"
               >
-                Clique Aqui <Image src={Seta} alt="Clique Aqui" placeholder="blur"/>
+                Clique Aqui
+                <Image
+                src={Seta}
+                alt="Clique Aqui"
+                // width={17} automatically provided
+      // height={12} automatically provided
+      // blurDataURL="data:..." automatically provided
+      // placeholder="blur" // Optional blur-up while loading
+                />
               </Link>
             </div>
             <span id="ou">OU</span>
@@ -57,7 +65,10 @@ export function HeroSobre() {
                 <Image
                 src={Seta}
                 alt="Clique Aqui"
-                placeholder="blur"
+                // width={17} automatically provided
+      // height={12} automatically provided
+      // blurDataURL="data:..." automatically provided
+      // placeholder="blur" // Optional blur-up while loading
                 />
               </Link>
             </div>

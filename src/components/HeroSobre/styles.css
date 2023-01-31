@@ -1,11 +1,5 @@
 @charset "UTF-8";
 
-/* CSS - Dinamite Criativa | Codificado por: Ueek Agência Digital | Ano: 2019 */
-
-/*
-font-family: 'Poppins', sans-serif; 400,500,700,800,900
-font-family: 'Julietta'
-*/
 /******************* Atribuições Gerais *********************/
 * {
 	box-sizing: border-box;
@@ -545,7 +539,6 @@ section#sobre {
 
 section#sobre .conteudo article {
 	float: right;
-
 	width: 630px;
 }
 
@@ -560,7 +553,6 @@ section#sobre .conteudo article h2 {
   }
   @media (max-width: 480px) {
     width: 100%;
-    margin-top: -5rem;
   }
 }
 

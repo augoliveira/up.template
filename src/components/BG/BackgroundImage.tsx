@@ -5,10 +5,12 @@ import bg from "../../../public/img/face.jpg"
 
 
 const Box = styled.div`
-  width: 100%;
-  height: 100vw;
-  position: fixed;
   z-index: -1;
+  position: fixed;
+  background-color: transparent;
+  justify-content: center;
+  align-items: center;
+  display: flex;
   top: 0;
 `;
 
@@ -55,11 +57,11 @@ function BGImage() {
           height={height}
           placeholder="blur"
           blurDataURL="data:image/png;base64,[IMAGE_CODE_FROM_PNG_PIXEL]"
-        quality={100}
-        sizes="100vw"
-        style={{
-          objectFit: 'cover',
-        }}
+          quality={100}
+          sizes="100vw"
+          style={{
+            objectFit: 'cover',
+          }}
         />
       </Box>
     );
