@@ -2936,10 +2936,8 @@ text-align: center;
 }
 
 .main-content {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), radial-gradient(38.46% 59.68% at 50.94% 20.73%, #31376F 0%, rgba(137, 75, 162, 0) 72.64%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, conic-gradient(from 187.44deg at 50.78% 32.18%, #F449F4 0deg, #0019C0 148.13deg, #7976E8 250.02deg, #F449F4 360deg);
-  backdrop-filter: blur(25px);
+  background: #0c0f16;
   position: relative;
-  width: 100%;
   z-index: 3;
 }
 
