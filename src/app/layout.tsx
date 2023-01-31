@@ -1,6 +1,7 @@
 
 import '#/styles/globals.css';
 import '#/styles/dark.css'
+import '#/styles/mqueries.css';
 
 import Head from './head';
 import { VercelLogo } from '#/ui/VercelLogo';

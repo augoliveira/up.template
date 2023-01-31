@@ -2936,6 +2936,7 @@ text-align: center;
 }
 
 .main-content {
+  width: 99%;
   background: #0c0f16;
   position: relative;
   z-index: 3;
@@ -6804,8 +6805,9 @@ section#cases .conteudo-fluid button#ver-mais-home:hover {
 
 /*SOBRE*/
 section#sobre {
+  background: url(/img/face1.jpg) no-repeat center;
   background-size: auto;
-	height: 98vh;
+	height: 115vh;
   font-family: 'Montserrat', sans-serif;
 }
 
