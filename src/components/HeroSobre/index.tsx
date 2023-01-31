@@ -1,5 +1,4 @@
 'use client';
-import './styles.css'
 import Image from 'next/image'
 import dynamic from 'next/dynamic'
 import Seta from '../../../public/img/seta.png'
