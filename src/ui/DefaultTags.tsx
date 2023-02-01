@@ -1,3 +1,4 @@
+import Script from "next/script"
 
 // Default <head> tags we want shared across the app
 const APP_NAME = 'Agência full service'
@@ -6,7 +7,10 @@ const APP_DESCRIPTION =
 export function DefaultTags() {
   return (
     <>
-      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=0"
+    />
       <meta charSet="utf-8" />
       <meta http-equiv="x-ua-compatible" content="ie=edge" />
       <meta name="robots" content="all" />
@@ -73,7 +77,6 @@ export function DefaultTags() {
         rel="mask-icon"
       />
       <link href="/favicon.ico" rel="shortcut icon" />
-
     </>
   )
 }

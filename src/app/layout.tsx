@@ -2,6 +2,13 @@
 import '#/styles/globals.css';
 import '#/styles/dark.css'
 import '#/styles/mqueries.css';
+import '#/styles/css/animate.css';
+import '#/styles/css/modal.css';
+import '#/lib/selectFx/cs-select.css';
+import '#/lib/selectFx/cs-skin-border.css';
+
+
+
 
 import Head from './head';
 import { VercelLogo } from '#/ui/VercelLogo';
