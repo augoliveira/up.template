@@ -1,4 +1,4 @@
-import Script from "next/script"
+import Script from "next/dist/client/script"
 
 // Default <head> tags we want shared across the app
 const APP_NAME = 'Agência full service'
@@ -77,6 +77,19 @@ export function DefaultTags() {
         rel="mask-icon"
       />
       <link href="/favicon.ico" rel="shortcut icon" />
+      <Script src="https://code.jquery.com/jquery-3.3.1.js" strategy="worker"></Script>
+      <Script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" strategy="worker"></Script>
+      <Script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js" strategy="worker"></Script>
+      <Script src="/lib/OwlCarousel2-2.3.4/dist/owl.carousel.min.js" strategy="worker"></Script>
+      <Script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.11.7/TweenMax.min.js" strategy="worker"></Script>
+
+
+
+    <Script src="../js/home.js" type="text/javascript" strategy="worker"></Script>
+    <Script src="../js/main.js" type="text/javascript" strategy="worker"></Script>
+    <Script src="../js/carregamento-lote.js" type="text/javascript" strategy="worker"></Script>
+    <Script src="../js/parallax.js" strategy="worker"></Script>
+
     </>
   )
 }

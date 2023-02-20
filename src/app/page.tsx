@@ -4,27 +4,25 @@ import { Contact } from '#/components/Contact/contact';
 import { Links } from '#/components/Links';
 import dynamic from 'next/dynamic';
 import Navbar from '#/components/Navbar';
-import React from 'react';
-import { Header } from '#/components/Header/page';
-import Dashboard from 'templates/Dashboard';
-import { Section } from '#/styles/styles';
+import { useEffect, useState } from 'react'
+import { Case } from '#/components/Case/page';
+
 
 
 const DynamicDashboard = dynamic(() => import('templates/Dashboard'), {
   ssr: false,
 });
-const Demos = dynamic(
-  () => import('#/components/Demos/index'),
-  {
-    ssr: false,
-  },
-);
+
 
 export default function Home() {
+   // The default value is 'blue', it will be used during pre-rendering and the first render in the browser (hydration)
+    const [color, setColor] = useState('blue')
+   // During hydration `useEffect` is called. `window` is available in `useEffect`. In this case because we know we're in the browser checking for window is not needed. If you need to read something from window that is fine.
+   // By calling `setColor` in `useEffect` a render is triggered after hydrating, this causes the "browser specific" value to be available. In this case 'red'.
+    useEffect(() => setColor('red'), [])
   return (
     <>
-          <Dashboard />
-
+          <DynamicDashboard />
     </>
   );
 }

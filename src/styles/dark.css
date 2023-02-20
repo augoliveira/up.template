@@ -6703,6 +6703,7 @@ section#cases .conteudo-fluid header nav ul li:hover,
 section#cases .conteudo-fluid header nav ul li.ativo {
 	border-bottom: 1px solid #ffcc00;
 	color: #ffcc00;
+
 }
 
 section#cases #container { height: auto !important; }
@@ -6726,6 +6727,7 @@ section#cases #container .case .case-hover {
 	padding-top: 170px;
 	text-align: center;
 	overflow: hidden;
+  
 }
 
 section#cases #container .case .case-hover .categoria {

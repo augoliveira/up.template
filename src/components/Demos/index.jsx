@@ -1,13 +1,13 @@
 /* eslint-disable @next/next/no-img-element */
 'use client';
-import { Suspense } from 'react';
+
 import { ExternalLink } from '#/ui/ExternalLink.tsx';
 import addParlx from '#/common/addParlx'
 import initIsotope from '#/common/initIsotope'
 import dynamic from 'next/dynamic';
 import Image from 'next/image'
 import Link from 'next/link'
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import styled from 'styled-components'
 import Typewriter from 'typewriter-effect'
 import Bg from '/public/bg-slide2.jpg'
@@ -73,6 +73,11 @@ const Demos = () => {
       document.querySelector('body').style.backgroundColor = '#181b21'
     }
   }, [pageLoaded])
+  const [displayImage, setDisplayImage] = useState(true);
+
+  useEffect(() => {
+    setDisplayImage(false);
+  }, []);
 
   return (
     <>
@@ -81,19 +86,11 @@ const Demos = () => {
         className="works-header fixed-slider hfixd valign bg-img1"
         data-overlay-dark="4"
       >
-        <Image
-          src={Bg}
-          alt="Picture of the author"
-          fill
-          placeholder="blur"
-          blurDataURL="data:image/png;base64,[IMAGE_CODE_FROM_PNG_PIXEL]"
-          quality={100}
-          sizes="100vw"
-          style={{
-            objectFit: 'cover',
-          }}
-        />
-
+        displayImage && (
+      <div style={{ position: "fixed", width: 1920, height: 1080 }}>
+        <Image priority fill src={Bg} alt="" sizes="100%" />
+      </div>
+    )
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-lg-9 col-md-11 static">
@@ -214,11 +211,13 @@ const Demos = () => {
             <span className="categoria">REDES SOCIAIS</span>
             <h2>Comunidade Plagiados</h2>
             <hr />
-            <a href="/portfolio/comunidade-plagiados-1-0" className="soft-hover"
+            <Link href="/portfolio/comunidade-plagiados-1-0" className="soft-hover"
               >Veja o Case
-              <Image
-              src={Seta} alt='seta'
-            /></a>
+              displayImage && (
+      <div style={{ position: "relative", width: 17, height: 12 }}>
+        <Image priority src={Seta} alt="" sizes="100%" />
+      </div>
+    )</Link>
           </div>
         </div>
 
@@ -242,8 +241,12 @@ const Demos = () => {
             <h2>Rino Maromba</h2>
             <hr />
             <a href="/portfolio/rino-maromba" className="soft-hover"
-              >Veja o Case <Image src={Seta}
-            /></a>
+              >Veja o Case
+              displayImage && (
+      <div style={{ position: "relative", width: 17, height: 12 }}>
+        <Image priority src={Seta} alt="" sizes="100%" />
+      </div>
+    )</a>
           </div>
         </div>
 
@@ -267,8 +270,12 @@ const Demos = () => {
             <h2>Marjore Fios</h2>
             <hr />
             <Link href="/portfolio/marjore-fios-2" className="soft-hover"
-              >Veja o Case <Image src={Seta}
-            /></Link>
+              >Veja o Case
+              displayImage && (
+      <div style={{ position: "relative", width: 17, height: 12 }}>
+        <Image priority src={Seta} alt="" sizes="100%" />
+      </div>
+    )</Link>
           </div>
         </div>
 
@@ -292,8 +299,12 @@ const Demos = () => {
             <h2>Inventório</h2>
             <hr />
             <Link href="/portfolio/inventorio" className="soft-hover"
-              >Veja o Case <Image src={Seta}
-            /></Link>
+              >Veja o Case
+              displayImage && (
+      <div style={{ position: "relative", width: 17, height: 12 }}>
+        <Image priority src={Seta} alt="" sizes="100%" />
+      </div>
+    )</Link>
           </div>
         </div>
 
@@ -317,8 +328,12 @@ const Demos = () => {
             <h2>MLHS</h2>
             <hr />
             <Link href="/portfolio/mlhs" className="soft-hover"
-              >Veja o Case <Image src={Seta}
-            /></Link>
+              >Veja o Case
+              displayImage && (
+      <div style={{ position: "relative", width: 17, height: 12 }}>
+        <Image priority src={Seta} alt="" sizes="100%" />
+      </div>
+    )</Link>
           </div>
         </div>
 
@@ -344,8 +359,12 @@ const Demos = () => {
             <Link
               href="/portfolio/plagiados-jornada-da-identidade-visual-premium-0"
               className="soft-hover"
-              >Veja o Case <Image src={Seta}
-            /></Link>
+              >Veja o Case
+            displayImage && (
+      <div style={{ position: "relative", width: 17, height: 12 }}>
+        <Image priority src={Seta} alt="" sizes="100%" />
+      </div>
+    )</Link>
           </div>
         </div>
 
@@ -369,8 +388,12 @@ const Demos = () => {
             <h2>ICC</h2>
             <hr />
             <Link href="/portfolio/icc-1-0" className="soft-hover"
-              >Veja o Case <Image src={Seta}
-            /></Link>
+              >Veja o Case
+              displayImage && (
+      <div style={{ position: "relative", width: 17, height: 12 }}>
+        <Image priority src={Seta} alt="" sizes="100%" />
+      </div>
+    )</Link>
           </div>
         </div>
 
@@ -394,8 +417,12 @@ const Demos = () => {
             <h2>Global Center</h2>
             <hr />
             <Link href="/portfolio/global-center" className="soft-hover"
-              >Veja o Case <Image src={Seta}
-            /></Link>
+              >Veja o Case
+              displayImage && (
+      <div style={{ position: "relative", width: 17, height: 12 }}>
+        <Image priority src={Seta} alt="" sizes="100%" />
+      </div>
+    )</Link>
           </div>
         </div>
 
@@ -419,8 +446,12 @@ const Demos = () => {
             <h2>Investir no Brasil</h2>
             <hr />
             <Link href="/portfolio/investir-no-brasil" className="soft-hover"
-              >Veja o Case <Image src={Seta}
-            /></Link>
+              >Veja o Case
+              displayImage && (
+      <div style={{ position: "relative", width: 17, height: 12 }}>
+        <Image priority src={Seta} alt="" sizes="100%" />
+      </div>
+    )</Link>
           </div>
         </div>
 
@@ -444,8 +475,12 @@ const Demos = () => {
             <h2>Fina Fibra</h2>
             <hr />
             <Link href="/portfolio/fina-fibra" className="soft-hover"
-              >Veja o Case <Image src={Seta}
-            /></Link>
+              >Veja o Case
+              displayImage && (
+      <div style={{ position: "relative", width: 17, height: 12 }}>
+        <Image priority src={Seta} alt="" sizes="100%" />
+      </div>
+    )</Link>
           </div>
         </div>
 
@@ -469,8 +504,12 @@ const Demos = () => {
             <h2>Plagiados</h2>
             <hr />
             <Link href="/portfolio/plagiados-1-1-0" className="soft-hover"
-              >Veja o Case <Image src={Seta}
-            /></Link>
+              >Veja o Case
+              displayImage && (
+      <div style={{ position: "relative", width: 17, height: 12 }}>
+        <Image priority src={Seta} alt="" sizes="100%" />
+      </div>
+    )</Link>
           </div>
         </div>
 
@@ -493,9 +532,13 @@ const Demos = () => {
             <span className="categoria">IDENTIDADE VISUAL</span>
             <h2>Prenda e peão</h2>
             <hr />
-            <a href="/portfolio/prenda-e-peao" className="soft-hover"
-              >Veja o Case <Image src={Seta}
-            /></a>
+            <Link href="/portfolio/prenda-e-peao" className="soft-hover"
+              >Veja o Case
+              displayImage && (
+      <div style={{ position: "relative", width: 17, height: 12 }}>
+        <Image priority src={Seta} alt="" sizes="100%" />
+      </div>
+    )</Link>
           </div>
         </div>
         <br />

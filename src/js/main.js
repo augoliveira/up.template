@@ -1,13 +1,13 @@
 $(document).ready(function(){
 	//Select
 	(function(){
-		[].slice.call( document.querySelectorAll('select.cs-select')).forEach( function(el) {	
+		[].slice.call( document.querySelectorAll('select.cs-select')).forEach( function(el) {
 			new SelectFx(el);
 		} );
 	})();
 
 	//Sessão largura
-	var widthScreen = $(window).width(); 
+	var widthScreen = $(window).width();
 	document.cookie = "widthScreen="+widthScreen+"; expires=Thu, 31 Dec 2030 12:00:00 UTC; path=/";
 
 	//Topo Fixo
@@ -68,12 +68,12 @@ $(document).ready(function(){
 	});
 
 	//Filter Galeria Portfa
-	$("#cases-menu li").click(function(){ 
+	$("#cases-menu li").click(function(){
 		var id = $(this).attr("id");
 		window.location.href="http://dinamitecriativa.com.br/index.php?pg=cases#"+id;
 	});
 
-	$("#cases-menu-interno li").click(function(){ 
+	$("#cases-menu-interno li").click(function(){
 		var id = $(this).attr("id");
 
 		if(id != "todos"){ $("section#cases #container .todos").stop().hide(); }
@@ -89,14 +89,14 @@ $(document).ready(function(){
 	});
 
 	$("#topo-portfolio #slct .cs-options li").click(function(){
-		var id = $(this).attr("data-value"); 
+		var id = $(this).attr("data-value");
 		window.location.href="http://dinamitecriativa.com.br/index.php?pg=cases#"+id;
 
 		$("#tipo_categoria").val(id);
 	});
 
 	$("#topo-portfolio #slct-cases .cs-options li").click(function(){
-		var id = $(this).attr("data-value"); 
+		var id = $(this).attr("data-value");
 		if(id != "todos"){ $("section#cases #container .todos").stop().hide(); }
 		$("section#cases #container ."+id).stop().fadeIn();
 
@@ -112,7 +112,7 @@ $(document).ready(function(){
 
 	var recuperaTipo = url.split('#');
 	var tipoAncora   = recuperaTipo[1];
-	
+
 	if(tipoAncora != "" && tipoAncora == "todos"   ||
 	   tipoAncora != "" && tipoAncora == "design"  ||
 	   tipoAncora != "" && tipoAncora == "id"      ||
@@ -151,24 +151,24 @@ $(document).ready(function(){
 	//Efeitos
 	sr.reveal('.fadeIn', { duration: 1000 });
 
-	sr.reveal('.rightShow', { 
-	  origin: 'right', 
-	  duration: 1000 
+	sr.reveal('.rightShow', {
+	  origin: 'right',
+	  duration: 1000
 	});
 
-	sr.reveal('.leftShow', { 
-	  origin: 'left', 
-	  duration: 1000 
+	sr.reveal('.leftShow', {
+	  origin: 'left',
+	  duration: 1000
 	});
 
-	sr.reveal('.topShow', { 
-	  origin: 'top', 
-	  duration: 1000 
+	sr.reveal('.topShow', {
+	  origin: 'top',
+	  duration: 1000
 	});
 
-	sr.reveal('.bottomShow', { 
-	  origin: 'bottom', 
-	  duration: 1000 
+	sr.reveal('.bottomShow', {
+	  origin: 'bottom',
+	  duration: 1000
 	});
 
 	//Whatsapp
@@ -176,7 +176,7 @@ $(document).ready(function(){
 
 	(function scrollReveal() {
 	  window.sx = ScrollReveal();
-	  
+
 	  sx.reveal('.primeiro', {
 	    duration   : 600,
 	    distance   : '20px',
@@ -187,7 +187,7 @@ $(document).ready(function(){
 	    viewFactor : 0,
 	    afterReveal : revealChildren,
 	  }, 150);
-	  
+
 	  var revealChildren = sx.reveal('.segundo', {
 	    duration   : 500,
 	    scale      : 1,
@@ -231,7 +231,7 @@ $(document).ready(function(){
 	    viewFactor : 4,
 	    afterReveal : revealChildren4,
 	  }, 70);
-	  
+
 	  var revealChildren4 = sx.reveal('.sexto', {
 	    duration   : 500,
 	    scale      : 1,
@@ -280,7 +280,7 @@ $(document).ready(function(){
 	//Centraliza Elementos
 	function centralizarElementoFixed(elemento, diferenca, tipo){
 		//Tipo
-		if(tipo == "margem") { var propriedade = "margin-top"; } 
+		if(tipo == "margem") { var propriedade = "margin-top"; }
 						else { var propriedade = "padding-top"; }
 
 		var alturaTela = $(window).height()-diferenca; //Desconta a distância da borda do topo
@@ -301,7 +301,7 @@ $(document).ready(function(){
 	centralizarElementoFixed("nav#redes-fixed", 90, "margem");
 	centralizarElementoFixed("#menu-centralizar", 500, "padding");
 	centralizarElementoFixed("#curriculo", 0, "margem");
-	
+
 	//Menu
 	function menuDown(){ $('#menu-open #navegacao-open').slideDown(500); }
 	function redesUp() { $('#menu-open #rs').fadeIn(500); }
@@ -319,7 +319,7 @@ $(document).ready(function(){
 		$("nav#menu-open").hide("slide", { direction: "right" }, 600);
 		$('#menu-open #navegacao-open').slideUp(900);
 		$('#menu-open #rs').fadeOut(900);
-		
+
 		if ($(window).scrollTop() > 500 && $(window).width() > 680) {
 	    	$('header#fixed-home').slideDown();
 		}else if ($(window).scrollTop() > 300 && $(window).width() < 680) {
@@ -368,7 +368,7 @@ $(document).ready(function(){
 		}
 
 		var valores = form.serialize();
-		
+
 		$('input', form).attr('disabled', 'disabled');
 		$('textarea', form).attr('disabled', 'disabled');
 		$.ajax({
@@ -418,7 +418,7 @@ $(document).ready(function(){
 		}
 
 		var valores = form.serialize();
-		
+
 		$('input', form).attr('disabled', 'disabled');
 		$('textarea', form).attr('disabled', 'disabled');
 		$.ajax({
@@ -490,8 +490,8 @@ function checkMail(mail){
 	if(typeof(mail) == "string"){
 		if(er.test(mail)){ return true; }
 	}else if(typeof(mail) == "object"){
-		if(er.test(mail.value)){ 
-			return true; 
+		if(er.test(mail.value)){
+			return true;
 		}
 	}else{
 		return false;

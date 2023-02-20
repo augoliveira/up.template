@@ -5,7 +5,7 @@ import * as S from '#/styles/styles'
 import HeroHome from '#/components/HeroHome/parallax';
 import { Section } from '#/styles/styles';
 import Link from 'next/link';
-import { About } from '#/components/About/page';
+import {Case} from '#/components/Case/page';
 import { Contact } from '#/components/Contact/contact';
 import { Footer } from '#/components/Footer/footer';
 import Demos from '#/components/Demos';

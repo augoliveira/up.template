@@ -5,6 +5,7 @@ const nextConfig = {
   swcMinify: true,
   experimental: {
     nextScriptWorkers: true,
+    urlImports: ['https://code.jquery.com/jquery-3.3.1.js', 'https://cdn.skypack.dev'],
     // Required:
     appDir: true,
   },
@@ -30,7 +31,15 @@ module.exports = {
     return [];
   }
 };
+
 module.exports = {
+  webpack: (
+    config,
+    { buildId, dev, isServer, defaultLoaders, nextRuntime, webpack }
+  ) => {
+    // Important: return the modified config
+    return config
+  },
   compress: false,
 }
 module.exports = nextConfig;
