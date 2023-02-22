@@ -66,6 +66,7 @@
     "eslint-plugin-simple-import-sort": "^10.0.0",
     "formik": "^2.2.9",
     "googleapis": "^111.0.0",
+    "jest-environment-jsdom": "^29.4.3",
     "jquery": "^3.6.3",
     "js-cookie": "^3.0.1",
     "ms": "^2.1.3",
