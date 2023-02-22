@@ -66,7 +66,7 @@ export function Header() {
           </li>
 
           <li>
-            <Link href={'#contact'} scroll={false}>
+          <Link href="/contato">
               <span>Contato</span>
             </Link>
           </li>

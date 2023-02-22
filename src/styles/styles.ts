@@ -88,7 +88,7 @@ export const Title = styled.h2`
 
 export const ButtonPrimary = styled.button`
   background-color: transparent;
-  font-size: 1.1rem;
+  font-size: 2rem;
   font-weight: 600;
   color: var(--text-primary);
   padding: 1.2rem;
@@ -151,10 +151,10 @@ export const ButtonSecondary = styled.button`
   text-align: center;
   gap: 10px;
   margin: 50px auto;
-  border: 0.25em solid var(--first-color);
+  border: 0.15em solid var(--first-color);
   padding: 1rem 2rem;
   color: var(--white);
-  font-size: 1rem;
+  font-size: 2rem;
   font-weight: 700;
   background-color: transparent;
   border-radius: 1em;

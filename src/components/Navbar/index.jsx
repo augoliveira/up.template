@@ -12,7 +12,6 @@ import {
 
 const Navbar = ({ lr, nr, theme }) => {
   React.useEffect(() => {
-    handleSearch()
   }, [])
   return (
     <nav
@@ -22,23 +21,23 @@ const Navbar = ({ lr, nr, theme }) => {
       }`}
     >
       <div className="container">
-        <Link href="/"  className="logo">
+        <Link href="/"  className="logo1">
             {theme ? (
               theme === 'themeL' ? (
                 <Image
                   ref={lr}
                   src={`${appData.darkLogo}`}
                   alt="logo"
-                  width={100}
-                  height={30}
+                  width={186}
+                  height={51}
                 />
               ) : (
-                <Image ref={lr} src={`${appData.lightLogo}`} alt="logo" width={100}
-                height={30}/>
+                <Image ref={lr} src={`${appData.lightLogo}`} alt="logo" width={186}
+                height={51}/>
               )
             ) : (
-              <Image ref={lr} src={`${appData.lightLogo}`} alt="logo" width={100}
-              height={30}/>
+              <Image ref={lr} src={`${appData.lightLogo}`} alt="logo" width={186}
+              height={51}/>
             )}
 
         </Link>
@@ -81,7 +80,7 @@ const Navbar = ({ lr, nr, theme }) => {
         </button>
 
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul className="navbar-nav ml-auto">
+          <ul className="navbar-nav ml-auto visible">
             <li className="nav-item dropdown" onClick={handleDropdown}>
               <span
                 className="nav-link dropdown-toggle"
@@ -158,9 +157,6 @@ const Navbar = ({ lr, nr, theme }) => {
               </button>
             </li>
           </ul>
-          <div className="search">
-            <span className="icon pe-7s-search cursor-pointer"></span>
-          </div>
         </div>
       </div>
     </nav>

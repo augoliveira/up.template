@@ -24,20 +24,9 @@
     "ecmaVersion": 12,
     "sourceType": "module"
   },
-  "plugins": [
-    "react",
-    "@typescript-eslint",
-    "react-hooks",
-    "prettier",
-    "@typescript-eslint",
-    "eslint-plugin-import-helpers",
-    "simple-import-sort", "import",
-    "import"
-  ],
+  "plugins": ["react", "@typescript-eslint", "react-hooks", "import-helpers"],
   "rules": {
     "react-hooks/rules-of-hooks": "error",
-    "simple-import-sort/imports": "error",
-    "simple-import-sort/exports": "error",
     "react-hooks/exhaustive-deps": "warn",
     "react/prop-types": "off",
     "react/react-in-jsx-scope": "off", // para trabalhar com NextJS apenas
@@ -55,6 +44,7 @@
           "/^components/",
           "/^pages/",
           "/utils/",
+          "/constants/",
           "/^store/",
           "/^styles/",
           "/^templates/",

@@ -9,6 +9,7 @@ import {Case} from '#/components/Case/page';
 import { Contact } from '#/components/Contact/contact';
 import { Footer } from '#/components/Footer/footer';
 import Demos from '#/components/Demos';
+import Heropage from "../../ui/Heropage";
 
 
 const Dashboard = () => {

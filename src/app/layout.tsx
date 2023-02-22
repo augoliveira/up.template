@@ -1,5 +1,6 @@
 
 import '#/styles/globals.css';
+import '#/styles/bootstrap.min.css';
 import '#/styles/dark.css'
 import '#/styles/mqueries.css';
 import '#/styles/css/animate.css';
@@ -8,12 +9,13 @@ import '/lib/selectFx/cs-select.css';
 import '/lib/selectFx/cs-skin-border.css';
 
 
-
-
-
 import Head from './head';
 import { VercelLogo } from '#/ui/VercelLogo';
 import { Header } from '#/components/Header/page';
+import { CopyrightLinearBanner } from '#/ui/copyright-linear-banner';
+import Script from 'next/script';
+import Cursor from '#/components/Cursor';
+import ScrollTop from '#/components/ScrollTop';
 export default function RootLayout({
   children,
 }: {
@@ -24,11 +26,23 @@ export default function RootLayout({
     <html lang="PT-BR" className="[color-scheme:dark]">
       <Head />
       <body>
+      <Cursor />
+    <ScrollTop />
         <div className="rounded-lg p-3.5 lg:p-0">
-          <Header />
           {children}
+          <Script
+        id="isotope"
+        strategy="beforeInteractive"
+        src="/js/isotope.pkgd.min.js"
+      ></Script>
+      <Script id="wow" src="/js/wow.min.js"></Script>
+      <Script
+        strategy="beforeInteractive"
+        id="splitting"
+        src="/js/splitting.min.js"
+      ></Script>
           </div>
-        <div className="mx-auto max-w-full space-y-8 px-2 pt-20 lg:py-8 lg:px-64">
+        <div className="mx-auto max-w-full space-y-8 px-8 pt-20 lg:py-8 lg:px-64">
           <div className="rounded-lg bg-vc-border-gradient p-px shadow-lg shadow-black/20">
             <div className="rounded-lg bg-vc-border-gradient p-px shadow-lg shadow-black/20">
               <div className="rounded-lg bg-black/30 backdrop-blur-xl">
@@ -37,6 +51,7 @@ export default function RootLayout({
             </div>
           </div>
         </div>
+        <CopyrightLinearBanner />
       </body>
     </html>
   );

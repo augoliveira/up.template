@@ -22,20 +22,3 @@ export const handleMobileDropdown = (e) => {
     .getElementById("navbarSupportedContent")
     .classList.toggle("show-with-trans");
 };
-
-export const handleSearch = () => {
-  const searchForm = document.querySelector(".navbar .search .search-form");
-  document
-    .querySelector(".navbar .search .icon")
-    .addEventListener("click", function () {
-      searchForm.style.display = "block";
-      fadeIn(searchForm, 200);
-    });
-
-  document
-    .querySelector(".navbar .search .search-form .close")
-    addEventListener("click", function () {
-      searchForm.style.display = "none";
-      fadeOut(searchForm, 200);
-    });
-};

@@ -13,8 +13,6 @@ const Main = ({ children }: MainProps) => (
   <ThemeProvider theme={theme}>
     <S.Content>{children}</S.Content>
     <GlobalStyle />
-    <Cursor />
-    <ScrollTop />
   </ThemeProvider>
 );
 

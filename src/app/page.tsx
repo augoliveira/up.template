@@ -9,7 +9,7 @@ import { Case } from '#/components/Case/page';
 
 
 
-const DynamicDashboard = dynamic(() => import('templates/Dashboard'), {
+const Dashboard = dynamic(() => import('templates/Dashboard'), {
   ssr: false,
 });
 
@@ -21,8 +21,8 @@ export default function Home() {
    // By calling `setColor` in `useEffect` a render is triggered after hydrating, this causes the "browser specific" value to be available. In this case 'red'.
     useEffect(() => setColor('red'), [])
   return (
-    <>
-          <DynamicDashboard />
-    </>
+    <div className="overflow-hidden pb-[16.4rem] md:pb-[25.6rem] bg-gray-1100 bg-fixed bg-[url('/grid.svg')]">
+          <Dashboard />
+    </div>
   );
 }
