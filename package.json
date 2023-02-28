@@ -61,7 +61,7 @@
     "classnames": "^2.3.2",
     "clsx": "^1.2.1",
     "date-fns": "2.29.3",
-    "dinero.js": "2.0.0-alpha.8",
+    "dinero.js": "2.0.0-alpha.14",
     "eslint-config-next": "^13.1.6",
     "eslint-plugin-simple-import-sort": "^10.0.0",
     "formik": "^2.2.9",
