@@ -7,7 +7,6 @@ const nextConfig = {
     nextScriptWorkers: true,
     urlImports: ['https://code.jquery.com/jquery-3.3.1.js', 'https://cdn.skypack.dev'],
     // Required:
-    appDir: true,
   },
   transpilePackages: ['@acme/ui', 'lodash-es'],
 };
